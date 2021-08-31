@@ -1,6 +1,6 @@
 # Setup
 1. Clone Repository
-2. Run `docker compose up --build`
+2. Run `docker compose up --build` within the cloned repository
 
 * The Scripts should automatically run and give you memory usage logs so that you can compare the two excel libraries.
 * The Scripts will run all the excel files under `test` and will sleep for 5 minutes before doing it again to simulate a long running script.
