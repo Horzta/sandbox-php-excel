@@ -1,0 +1,17 @@
+{
+    "name": "horzta/php-office-test",
+    "require": {
+        "phpoffice/phpspreadsheet": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "\\lib"
+        }
+    },
+    "authors": [
+        {
+            "name": "Horst Erich Akira Hora",
+            "email": "ahora@joinpiggy.com"
+        }
+    ]
+}

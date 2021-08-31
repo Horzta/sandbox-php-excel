@@ -1,0 +1,17 @@
+{
+    "name": "horzta/box-spout-test",
+    "require": {
+        "box/spout": "^3.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "Lib\\": "\\lib"
+        }
+    },
+    "authors": [
+        {
+            "name": "Horst Erich Akira Hora",
+            "email": "ahora@joinpiggy.com"
+        }
+    ]
+}

@@ -1,0 +1,12 @@
+FROM php:7.4-cli
+
+WORKDIR /var/excel/
+
+RUN apt update
+RUN apt install libzip-dev -y
+
+# Install PHP extensions
+RUN docker-php-ext-install zip
+
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
+CMD composer install && php main.php

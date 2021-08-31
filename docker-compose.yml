@@ -1,0 +1,28 @@
+version: '3.8'
+services:
+  excel-box-spout:
+    container_name: excel-box-spout
+    build:
+      context: ./box-spout
+      dockerfile: DockerFile
+    volumes:
+      - ./box-spout:/var/excel
+      - ./test:/var/excel/test
+      - ./lib:/var/excel/lib
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
+  excel-php-office:
+    container_name: excel-php-office
+    build:
+      context: ./php-office
+      dockerfile: DockerFile
+    volumes:
+      - ./php-office:/var/excel
+      - ./test:/var/excel/test
+      - ./lib:/var/excel/lib
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
