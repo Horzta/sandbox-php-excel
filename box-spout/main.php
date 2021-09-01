@@ -43,6 +43,9 @@ while (true) {
         Helper::displayMemoryUsage("Unset Reader");
         Helper::displayEndFile($file);
     }
+    gc_collect_cycles();
+    Helper::displayMemoryUsage("Garbage Collected");
+
     Helper::displayMemoryUsage("Sleeping");
     sleep(300); //Sleep for 5 minutes so that we don't continously use CPU while simulating a worker service
 }
