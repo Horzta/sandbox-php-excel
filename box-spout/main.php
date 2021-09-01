@@ -21,8 +21,7 @@ while (true) {
                 $cells = $row->getCells();
 
                 // If you want to check if the data per row is being retrieved
-                // you can uncomment this block, but this will consume additional resources on
-                // Docker's ram
+                // you can uncomment this block
                 // $helper->log(
                 //     "Reading Line:" . str_pad($cells[0]->getValue(), 10, " ", STR_PAD_LEFT) .
                 //     str_pad($cells[3]->getValue(), 30, " ", STR_PAD_LEFT) .
